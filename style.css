@@ -35,10 +35,11 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-end;
+    justify-content: flex-end;
 
-    padding-bottom: 165px;
+    padding: 0px 140px 140px 165px;
 }
+
 .hero-logo {
     width: 240px;
     height: 240px;
@@ -53,10 +54,12 @@ nav {
 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
+
 .hero-logo img {
     height: 180px;
     width: 180px;
 }
+
 .hero-headline {
     display: flex;
     align-items: center;
@@ -91,58 +94,6 @@ main {
     flex-direction: column;
 }
 
-.menu-category {
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    background-color: rgba(231, 108, 31, 1);
-
-}
-.menu-category > h2 {
-    padding-left: 290px;
-}
-
-
-.menu-card {
-    background-color: rgba(253, 234, 220, 1);
-
-    width: 60%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-
-    padding: 12px;
-    margin-left: 120px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-
-    border-radius: 12px;
-}
-.menu-card-img {
-    width: 210px;
-    height: 120px;
-
-    object-fit: cover;
-
-}
-.menu-card-img img {
-    border-radius: 4px;
-}
-.menu-card-text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-.menu-card-buy {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
 footer {
     height: 128px;
     width: 100%;
@@ -168,6 +119,7 @@ footer {
     align-items: center;
     gap: 5px;
 }
+
 .footer-wrapper a {
     text-decoration: none;
 }
