@@ -54,6 +54,13 @@
     gap: 60px;
 }
 
+.basket-sticky {
+    position: sticky;
+    top:0;
+    right: 0;
+    z-index: 999;
+}
+
 .basket-wrapper {
     width: 440px;
     height: 800px;
@@ -67,12 +74,12 @@
     border-bottom-left-radius: 30px;
 
     padding: 60px 65px 60px 30px;
-
-    z-index: 999;
 }
+
 .basket-wrapper h6 {
     padding-bottom: 36px;
 }
+
 .basket-menu-card {
     width: 100%;
     background-color: rgba(253, 234, 220, 1);
@@ -82,16 +89,19 @@
     padding: 20px;
     border-radius: 20px;
 }
+
 .basket-menu-card-text {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .basket-menu-card-quanity-counter {
     width: 100%;
     display: flex;
     gap: 10px;
 }
+
 .basket-subtotal {
     width: 100%;
     display: flex;
@@ -99,12 +109,14 @@
 
     margin-top: 36px;
 }
+
 .basket-delivery-fee {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
 }
+
 .basket-total {
     width: 100%;
     display: flex;
