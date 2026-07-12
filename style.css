@@ -98,7 +98,6 @@ main {
     justify-content: center;
 
     background-color: rgba(231, 108, 31, 1);
-    color: white;
 
 }
 .menu-category > h2 {
@@ -168,11 +167,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 5px;
-
-    color: white;
 }
 .footer-wrapper a {
     text-decoration: none;
-
-    color: white;
 }
