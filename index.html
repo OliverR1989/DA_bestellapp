@@ -119,15 +119,21 @@
             <div class="basket-wrapper">
                 <h6>Your Basket</h6>
                 <div class="basket-menu-card">
-                    <h4>Menu Name</h4>
+                    <div class="basket-menu-card-headline">
+                        <h4>Menu Name</h4>
+                        <button class="delet-all-button"></button>
+                    </div>
                     <div class="basket-menu-card-text">
                         <div class="basket-menu-card-quanity-counter">
-                            <h4>-</h4>
-                            <h4>1</h4>
-                            <h4>+</h4>
-                        </div>
-                        <div>
-                            <h4>Price</h4>
+                            <div class="item-count">
+                                <button class="delet-item-button"></button>
+                                <button class="minus-item-button"></button>
+                                <h4 class="summary-items">1</h4>
+                                <button class="plus-item-button"></button>
+                            </div>
+                            <div>
+                                <h4>Price</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +149,10 @@
                     <p>Total</p>
                     <p>Price</p>
                 </div>
-                <button class="buy-now-button"><p id="summary">Buy Now</p></button>
+                <button class="buy-now-button">
+                    <p id="summary">Buy Now</p>
+                </button>
+            </div>
             </div>
         </aside>
         <aside class="basket-sticky-empty">

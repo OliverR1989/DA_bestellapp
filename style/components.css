@@ -9,12 +9,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
 .menu-category>h2 {
     padding-left: 290px;
+}
+
+.menu-wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* menu-cards */
@@ -40,7 +45,6 @@
     height: 120px;
 
     object-fit: cover;
-
 }
 
 .menu-card-img img {
@@ -67,7 +71,7 @@
     background-repeat: no-repeat;
 
     width: 115px;
-    height: 30px;
+    height: 35px;
 
     background-color: transparent;
     border: none;
@@ -121,6 +125,34 @@
     border-radius: 20px;
 }
 
+.basket-menu-card-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delet-all-button {
+    display: none;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.delet-all-button:hover {
+    background-image: url(/assets/icons/delet-hover.png);
+
+}
+
 .basket-menu-card-text {
     width: 100%;
     display: flex;
@@ -130,7 +162,12 @@
 .basket-menu-card-quanity-counter {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     gap: 10px;
+}
+
+.item-count {
+    display: flex;
 }
 
 .basket-subtotal {
@@ -165,6 +202,7 @@
 
     background-color: rgba(231, 108, 31, 1);
     border-radius: 60px;
+    border: none;
 
     cursor: pointer;
 }
@@ -176,13 +214,7 @@
     font-weight: 700;
 }
 
-.menu-wrapper {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
+/* Empty Basket */
 .basket-sticky-empty {
     display: none;
 
