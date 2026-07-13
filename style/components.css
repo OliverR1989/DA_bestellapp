@@ -89,11 +89,13 @@
 
 /* basket-sticky */
 .basket-sticky {
-
     position: sticky;
     top: 0;
     right: 0;
     z-index: 999;
+}
+.basket-sticky.hidden{
+    display:none;
 }
 
 .basket-wrapper {

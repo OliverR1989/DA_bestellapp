@@ -9,7 +9,6 @@
     <link href="style.css" rel="stylesheet">
     <link href="./style/typography.css" rel="stylesheet">
     <link href="./style/components.css" rel="stylesheet">
-    <script src="script.js"></script>
     <script src="./scripts/db.js"></script>
 </head>
 
@@ -115,7 +114,7 @@
                 </div>
             </section>
         </div>
-        <aside class="basket-sticky">
+        <aside class="basket-sticky" id="basket">
             <div class="basket-wrapper">
                 <h6>Your Basket</h6>
                 <div class="basket-menu-card">
@@ -179,12 +178,13 @@
     </footer>
     <section class="delivery-modal" id="modal">
         <div class="delivery-modal-box" id="modal-box">
-            <button class="close-modal" id="modal-close" onclick="closeModal('modal')">X</button>
+            <button class="close-modal" id="close-modal" onclick="closeModal('modal')">X</button>
             <img src="./assets/icons/delivery-logo.png" alt="delivery-logo">
             <h4>Order confirmed!</h4>
             <h4>Your food is on the way!</h4>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
