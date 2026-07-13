@@ -147,6 +147,7 @@
 
     cursor: pointer;
 }
+
 .delet-item-button {
     display: none;
     width: 24px;
@@ -162,6 +163,7 @@
 
     cursor: pointer;
 }
+
 .minus-item-button {
     width: 13px;
     height: 24px;
@@ -176,6 +178,7 @@
 
     cursor: pointer;
 }
+
 .plus-item-button {
     width: 13px;
     height: 24px;
@@ -300,4 +303,39 @@
     font-size: 24px;
     font-family: 'Palanquin';
 
+}
+
+/* Modal */
+.delivery-modal.active {
+    display: flex;
+}
+.delivery-modal {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 31, 20, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-modal-box {
+    width: 420px;
+    height: 270px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(54, 53, 52, 1);
+
+    border-radius: 30px;
+}
+
+.delivery-modal-box h4 {
+    color: rgba(253, 234, 220, 1);
 }
