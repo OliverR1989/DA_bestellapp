@@ -150,7 +150,7 @@
                     <p>Price</p>
                 </div>
                 <button class="buy-now-button">
-                    <p id="summary">Buy Now</p>
+                    <p id="summary" onclick="openModal('modal')">Buy Now</p>
                 </button>
             </div>
         </aside>
@@ -177,9 +177,9 @@
             <a href="#">Cookie Preferences</a>
         </div>
     </footer>
-    <section class="delivery-modal active">
-        <div class="delivery-modal-box">
-            <button></button>
+    <section class="delivery-modal" id="modal">
+        <div class="delivery-modal-box" id="modal-box">
+            <button class="close-modal" id="modal-close" onclick="closeModal('modal')">X</button>
             <img src="./assets/icons/delivery-logo.png" alt="delivery-logo">
             <h4>Order confirmed!</h4>
             <h4>Your food is on the way!</h4>
