@@ -60,7 +60,7 @@ const menuData = [
     ]
   },
   {
-    category: "Getränke",
+    category: "Getraenke",
     items: [
       {
         name: "Grüner Tee",
@@ -80,3 +80,4 @@ const menuData = [
     ]
   }
 ];
+

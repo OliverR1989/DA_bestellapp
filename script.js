@@ -30,4 +30,15 @@ document.addEventListener('keydown', function(e){
     }
 })
 
-setTimeout(closeModal, 2500);
+setTimeout(closeModal, 5000);
+
+
+menuData.forEach(function(entryCategory) {
+    const menuCategory = document.getElementById("category-" + entryCategory.category.toLowerCase());
+   menuCategory.innerHTML = entryCategory.category;
+})
+
+menuData.forEach(function(entryItemPrice) {
+    const menuPrice = document.getElementById('price-maki' + entryItemPrice.item.price);
+    console.log(menuPrice);
+})
