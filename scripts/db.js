@@ -5,17 +5,20 @@ const menuData = [
       {
         name: "Avocado Maki",
         description: "Klassische Reisrolle mit frischer Avocado",
-        price: 5.90
+        price: 5.90,
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Lachs Maki",
         description: "Reisrolle mit frischem Lachs und Nori",
-        price: 6.90
+        price: 6.90,
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Gurken Maki",
         description: "Vegetarische Rolle mit knackiger Gurke",
-        price: 4.90
+        price: 4.90,
+        image: "./assets/img/menu/maki-1.jpg",
       }
     ]
   },
@@ -25,17 +28,20 @@ const menuData = [
       {
         name: "Lachs Nigiri",
         description: "Handgeformter Reis mit frischer Lachsscheibe",
-        price: 3.50
+        price: 3.50,
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Thunfisch Nigiri",
         description: "Handgeformter Reis mit magerem Thunfisch",
-        price: 3.90
+        price: 3.90,
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Garnelen Nigiri",
         description: "Handgeformter Reis mit gekochter Garnele",
-        price: 3.20
+        price: 3.20,
+        image: "./assets/img/menu/maki-1.jpg",
       }
     ]
   },
@@ -45,17 +51,20 @@ const menuData = [
       {
         name: "Mochi Erdbeere",
         description: "Weiches Reiskuchen-Dessert mit Erdbeerfüllung",
-        price: 4.50
+        price: 4.50,
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Mango Sticky Rice",
         description: "Klebreis mit süßer Kokosmilch und frischer Mango",
-        price: 5.50
+        price: 5.50,
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Green Tea Eis",
         description: "Cremiges Matcha-Eis, leicht und erfrischend",
-        price: 3.90
+        price: 3.90,
+        image: "./assets/img/menu/maki-1.jpg",
       }
     ]
   },
@@ -65,17 +74,20 @@ const menuData = [
       {
         name: "Grüner Tee",
         description: "Traditioneller japanischer Grüntee, warm serviert",
-        price: 2.50
+        price: 2.50,
+       image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Ramune",
         description: "Japanische Limonade mit fruchtigem Geschmack",
-        price: 3.20
+        price: 3.20,
+       image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Mineralwasser",
         description: "Still oder mit Kohlensäure",
-        price: 2.20
+        price: 2.20,
+        image: "./assets/img/menu/maki-1.jpg",
       }
     ]
   }

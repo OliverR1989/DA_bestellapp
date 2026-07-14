@@ -54,7 +54,11 @@
 }
 
 .menu-card-img img {
-    border-radius: 4px;
+    width: 210px;
+    height: 120px;
+    border-radius: 8px;
+
+    padding-right: 12px;
 }
 
 .menu-card-text {
