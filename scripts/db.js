@@ -6,20 +6,20 @@ const menuData = [
         name: "Avocado Maki",
         description: "Klassische Reisrolle mit frischer Avocado",
         price: 5.90,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/avocado-maki.png",
       },
       {
         name: "Lachs Maki",
         description: "Reisrolle mit frischem Lachs und Nori",
         price: 6.90,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/lachs-maki.png",
       },
       {
         name: "Gurken Maki",
         description: "Vegetarische Rolle mit knackiger Gurke",
         price: 4.90,
         image: "./assets/img/menu/maki-1.jpg",
-      }
+      },
     ]
   },
   {
@@ -75,13 +75,13 @@ const menuData = [
         name: "Grüner Tee",
         description: "Traditioneller japanischer Grüntee, warm serviert",
         price: 2.50,
-       image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Ramune",
         description: "Japanische Limonade mit fruchtigem Geschmack",
         price: 3.20,
-       image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/maki-1.jpg",
       },
       {
         name: "Mineralwasser",
@@ -92,4 +92,3 @@ const menuData = [
     ]
   }
 ];
-

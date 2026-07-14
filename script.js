@@ -5,6 +5,7 @@ function openModal() {
     document.getElementById('modal').classList.add('active');
     document.getElementById('basket').classList.add('hidden');
     document.body.style.overflow = 'hidden';
+    setTimeout(closeModal, 2500);
 }
 
 function closeModal() {
@@ -30,9 +31,6 @@ document.addEventListener('keydown', function (e) {
     }
 })
 
-setTimeout(closeModal, 5000);
-
-
 menuData.forEach(function (entryCategory) {
     const menuCategory = document.getElementById("category-" + entryCategory.category.toLowerCase());
     menuCategory.innerHTML = entryCategory.category;
@@ -54,7 +52,6 @@ menuData.forEach(function (entryCategory) {
                                         <button class="menu-card-button"></button>
                                     </div>
                                 </div>`;
-        console.log(menuCardHTML);
         menuContainer.innerHTML += menuCardHTML;
     });
 })
