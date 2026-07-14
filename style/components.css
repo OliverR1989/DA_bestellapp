@@ -1,18 +1,24 @@
 .menu-category {
-
     background-image: url(/assets/img/Rectangle\ 13.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
     width: 100%;
     height: 60px;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.menu-category>h2 {
-    padding-left: 290px;
+.menu-category img {
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    margin-left: 132px;
+
+     box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 .menu-wrapper {
