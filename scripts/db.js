@@ -1,3 +1,4 @@
+const deliverCost = 4.90
 const menuData = [
   {
     category: "Maki",
@@ -93,6 +94,6 @@ const menuData = [
   }
 ];
 
-const deliverCost = 4.90
+
 
 

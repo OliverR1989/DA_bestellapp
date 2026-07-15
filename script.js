@@ -57,3 +57,6 @@ menuData.forEach(function (entryCategory) {
 })
 
 document.getElementById('deliver-cost').innerHTML = euroFormat.format(deliverCost);
+
+document.getElementById('total-cost').innerHTML = euroFormat.format(deliverCost + 5);
+document.getElementById('total-cost-button').innerHTML = euroFormat.format(deliverCost + 5)

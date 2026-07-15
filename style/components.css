@@ -267,6 +267,11 @@
     border: none;
 
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
 }
 
 .buy-now-button p {
