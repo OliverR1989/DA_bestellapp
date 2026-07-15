@@ -92,3 +92,7 @@ const menuData = [
     ]
   }
 ];
+
+const deliverCost = 4.90
+
+

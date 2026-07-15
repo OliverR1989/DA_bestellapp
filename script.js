@@ -1,3 +1,4 @@
+const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
 const modal = document.getElementById('modal');
 
 function openModal() {
@@ -47,10 +48,11 @@ menuData.forEach(function (entryCategory) {
                                         <h5>${menuItem.description}</h5>
                                     </div>
                                     <div class="menu-card-buy">
-                                        <h4>${menuItem.price} €</h4>
+                                        <h4>${euroFormat.format(menuItem.price)}</h4>
                                         <button class="menu-card-button"></button>
                                     </div>
                                 </div>`;
         menuContainer.innerHTML += menuCardHTML;
     });
 })
+
