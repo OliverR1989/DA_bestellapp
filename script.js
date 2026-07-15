@@ -1,5 +1,4 @@
 const modal = document.getElementById('modal');
-console.log(modal);
 
 function openModal() {
     document.getElementById('modal').classList.add('active');

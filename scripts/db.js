@@ -18,7 +18,7 @@ const menuData = [
         name: "Gurken Maki",
         description: "Vegetarische Rolle mit knackiger Gurke",
         price: 4.90,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/gurken-maki.png",
       },
     ]
   },
@@ -29,7 +29,7 @@ const menuData = [
         name: "Lachs Nigiri",
         description: "Handgeformter Reis mit frischer Lachsscheibe",
         price: 3.50,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/lachs-nigiri.png",
       },
       {
         name: "Thunfisch Nigiri",
