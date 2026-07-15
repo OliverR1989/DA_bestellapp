@@ -56,3 +56,4 @@ menuData.forEach(function (entryCategory) {
     });
 })
 
+document.getElementById('deliver-cost').innerHTML = euroFormat.format(deliverCost);
