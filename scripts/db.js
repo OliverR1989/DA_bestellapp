@@ -53,19 +53,19 @@ const menuData = [
         name: "Mochi Erdbeere",
         description: "Weiches Reiskuchen-Dessert mit Erdbeerfüllung",
         price: 4.50,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/mochi-dessert.png",
       },
       {
         name: "Mango Sticky Rice",
         description: "Klebreis mit süßer Kokosmilch und frischer Mango",
         price: 5.50,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/mango-dessert.png",
       },
       {
         name: "Green Tea Eis",
         description: "Cremiges Matcha-Eis, leicht und erfrischend",
         price: 3.90,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/ice-dessert.png",
       }
     ]
   },
@@ -76,19 +76,19 @@ const menuData = [
         name: "Grüner Tee",
         description: "Traditioneller japanischer Grüntee, warm serviert",
         price: 2.50,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/tea-drinks.png",
       },
       {
         name: "Ramune",
         description: "Japanische Limonade mit fruchtigem Geschmack",
         price: 3.20,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/ramune-drinks.png",
       },
       {
         name: "Mineralwasser",
         description: "Still oder mit Kohlensäure",
         price: 2.20,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/water-drinks.png",
       }
     ]
   }
