@@ -122,7 +122,13 @@
 .basket-wrapper h6 {
     padding-bottom: 36px;
 }
+.basket-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
+}
 .basket-menu-card {
     width: 100%;
     background-color: rgba(253, 234, 220, 1);
