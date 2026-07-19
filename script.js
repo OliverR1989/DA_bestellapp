@@ -3,7 +3,7 @@ const modal = document.getElementById('modal');
 
 function openModal() {
     document.getElementById('modal').classList.add('active');
-    document.getElementById('basket').classList.add('hidden');
+    document.getElementById('basket').classList.remove('openBasket');
     document.body.style.overflow = 'hidden';
     setTimeout(closeModal, 2500);
 }
@@ -49,14 +49,20 @@ menuData.forEach(function (entryCategory) {
                                     </div>
                                     <div class="menu-card-buy">
                                         <h4>${euroFormat.format(menuItem.price)}</h4>
-                                        <button class="menu-card-button"></button>
+                                        <button class="menu-card-button" onclick="openBasket('basket')"></button>
                                     </div>
                                 </div>`;
         menuContainer.innerHTML += menuCardHTML;
     });
 })
 
+function openBasket() {
+    document.getElementById('basket').classList.add('openBasket');
+    document.body.style.overflow = 'hidden';
+}
+
 document.getElementById('deliver-cost').innerHTML = euroFormat.format(deliverCost);
 
 document.getElementById('total-cost').innerHTML = euroFormat.format(deliverCost + 5);
+
 document.getElementById('total-cost-button').innerHTML = "( " + euroFormat.format(deliverCost + 5) + " )";

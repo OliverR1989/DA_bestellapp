@@ -36,13 +36,13 @@ const menuData = [
         name: "Thunfisch Nigiri",
         description: "Handgeformter Reis mit magerem Thunfisch",
         price: 3.90,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/thunfisch-nigiri.png",
       },
       {
         name: "Garnelen Nigiri",
         description: "Handgeformter Reis mit gekochter Garnele",
         price: 3.20,
-        image: "./assets/img/menu/maki-1.jpg",
+        image: "./assets/img/menu/garnelen-nigiri.png",
       }
     ]
   },

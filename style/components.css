@@ -93,13 +93,15 @@
 
 /* basket-sticky */
 .basket-sticky {
+    display: none;
+
     position: sticky;
     top: 0;
     right: 0;
     z-index: 999;
 }
-.basket-sticky.hidden{
-    display:none;
+.basket-sticky.openBasket{
+    display:flex;
 }
 
 .basket-wrapper {
