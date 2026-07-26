@@ -8,9 +8,12 @@ header {
     height: 128px;
 
     background-color: rgba(231, 108, 31, 1);
+    display: flex;
+    justify-content: center;
 }
 
 nav {
+    max-width: 1440px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -39,13 +42,12 @@ nav {
 
     display: flex;
     justify-content: center;
-    align-items: center;
-
 
     position: relative;
 }
 
 .hero-img img {
+    max-width: 1440px;
     height: 80%;
     width: 100%;
 
@@ -145,9 +147,13 @@ footer {
     background-color: rgba(231, 108, 31, 1);
 
     margin-top: 90px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .footer-wrapper {
+    max-width: 1440px;
     height: 100%;
     width: 100%;
 
