@@ -32,11 +32,9 @@
 .menu-card {
     background-color: rgba(253, 234, 220, 1);
 
-    width: 60%;
+    width: 720px;
     height: 150px;
     display: flex;
-    justify-content: space-between;
-    align-self: flex-start;
 
     padding: 12px;
     margin-left: 120px;
@@ -55,17 +53,18 @@
 }
 
 .menu-card-text {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
 .menu-card-price {
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     gap: 60px;
 }
 

@@ -27,8 +27,6 @@ menuData.forEach((menu) => {
         <h4>${menu.price}</h4>
         <button></button>`
 
-
-
         document.getElementById("main-content-maki").appendChild(menuCard)
         menuCard.appendChild(menuCardImage)
         menuCard.appendChild(menuCardText)
@@ -61,8 +59,6 @@ menuData.forEach((menu) => {
         <h3>${menu.price}</h3>
         <button></button>`
 
-
-
         document.getElementById("main-content-nigiri").appendChild(menuCard)
         menuCard.appendChild(menuCardImage)
         menuCard.appendChild(menuCardText)
@@ -93,8 +89,6 @@ menuData.forEach((menu) => {
         menuCardPrice.innerHTML = `
         <h3>${menu.price}</h3>
         <button></button>`
-
-
 
         document.getElementById("main-content-dessert").appendChild(menuCard)
         menuCard.appendChild(menuCardImage)
@@ -127,8 +121,6 @@ menuData.forEach((menu) => {
         menuCardPrice.innerHTML = `
         <h3>${menu.price}</h3>
         <button></button>`
-
-
 
         document.getElementById("main-content-getraenke").appendChild(menuCard)
         menuCard.appendChild(menuCardImage)
