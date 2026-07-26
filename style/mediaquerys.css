@@ -29,8 +29,6 @@
         height: 350px;
 
         border-radius: 16px;
-
-
     }
 
     .hero-img img {
@@ -47,7 +45,7 @@
     .hero-logo {
         width: 120px;
         height: 120px;
-        top: 47%;
+        top: calc((100% - 450px) / 2);
     }
 
     .hero-logo img {
