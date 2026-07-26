@@ -1,9 +1,3 @@
-const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
-
-const modal = document.getElementById('modal');
-
-const basket = [];
-
 menuData.forEach(function (entryCategory) {
     const menuCategory = document.getElementById("category-" + entryCategory.category.toLowerCase());
     menuCategory.innerHTML = entryCategory.category;
@@ -134,16 +128,12 @@ document.addEventListener('click', function (e) {
     }
 });
 
-
-
 document.addEventListener('click', function (e) {
     if (e.target.classList.contains('minus-item-button')) {
         const name = e.target.dataset.name;
         changeQuantity(name, -1);
     }
 });
-
-
 
 document.addEventListener('click', function (e) {
     if (e.target.classList.contains('delet-item-button')) {
