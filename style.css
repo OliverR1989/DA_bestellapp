@@ -34,13 +34,21 @@ nav {
 }
 
 .hero-img {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    position: relative;
+}
+
+.hero-img img {
     height: 80%;
     width: 100%;
 
-    background-image: url(./assets/img/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     position: relative;
 }
