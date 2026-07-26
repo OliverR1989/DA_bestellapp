@@ -12,19 +12,19 @@ menuData.forEach((menu) => {
         menuCard.classList.add("menu-card")
         menuCardImage.classList.add("menu-card-img")
         menuCardText.classList.add("menu-card-text")
-        menuCardText.classList.add("menu-card-price")
+        menuCardPrice.classList.add("menu-card-price")
 
         menuCardImage.innerHTML = `
         <img src="${menu.image}" alt="">
         `;
 
         menuCardText.innerHTML = `
-        <h3>${menu.name}</h3>
-        <h4>${menu.description}</h4>
+        <h4>${menu.name}</h4>
+        <p class="description-text">${menu.description}</p>
         `;
 
         menuCardPrice.innerHTML = `
-        <h3>${menu.price}</h3>
+        <h4>${menu.price}</h4>
         <button></button>`
 
 
@@ -46,7 +46,7 @@ menuData.forEach((menu) => {
         menuCard.classList.add("menu-card")
         menuCardImage.classList.add("menu-card-img")
         menuCardText.classList.add("menu-card-text")
-        menuCardText.classList.add("menu-card-price")
+        menuCardPrice.classList.add("menu-card-price")
 
         menuCardImage.innerHTML = `
         <img src="${menu.image}" alt="">
@@ -54,7 +54,7 @@ menuData.forEach((menu) => {
 
         menuCardText.innerHTML = `
         <h3>${menu.name}</h3>
-        <h4>${menu.description}</h4>
+        <p class="description-text">${menu.description}</p>
         `;
 
         menuCardPrice.innerHTML = `
@@ -79,7 +79,7 @@ menuData.forEach((menu) => {
         menuCard.classList.add("menu-card")
         menuCardImage.classList.add("menu-card-img")
         menuCardText.classList.add("menu-card-text")
-        menuCardText.classList.add("menu-card-price")
+        menuCardPrice.classList.add("menu-card-price")
 
         menuCardImage.innerHTML = `
         <img src="${menu.image}" alt="">
@@ -87,7 +87,7 @@ menuData.forEach((menu) => {
 
         menuCardText.innerHTML = `
         <h3>${menu.name}</h3>
-        <h4>${menu.description}</h4>
+        <p class="description-text">${menu.description}</p>
         `;
 
         menuCardPrice.innerHTML = `
@@ -113,7 +113,7 @@ menuData.forEach((menu) => {
         menuCard.classList.add("menu-card")
         menuCardImage.classList.add("menu-card-img")
         menuCardText.classList.add("menu-card-text")
-        menuCardText.classList.add("menu-card-price")
+        menuCardPrice.classList.add("menu-card-price")
 
         menuCardImage.innerHTML = `
         <img src="${menu.image}" alt="">
@@ -121,7 +121,7 @@ menuData.forEach((menu) => {
 
         menuCardText.innerHTML = `
         <h3>${menu.name}</h3>
-        <h4>${menu.description}</h4>
+        <p class="description-text">${menu.description}</p>
         `;
 
         menuCardPrice.innerHTML = `
