@@ -1,10 +1,8 @@
 const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
 
-const modal = document.getElementById('modal');
-
 const basket = [];
 
-const deliverCost = 4.90
+const deliverCost = (euroFormat.format(4.90));
 
 const menuData = [
   {
