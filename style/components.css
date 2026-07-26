@@ -96,6 +96,10 @@
     height: 80px;
 
     background-color: rgba(54, 53, 52, 1);
+
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
 }
 .sticky-footer-wrapper {
     width: 100%;
