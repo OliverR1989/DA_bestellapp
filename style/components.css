@@ -12,6 +12,15 @@
     gap: 20px;
 }
 
+.menu-category-content {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .menu-category img {
     width: 90px;
     height: 90px;
