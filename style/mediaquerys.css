@@ -89,6 +89,7 @@
     }
     .menu-category-content {
         flex-direction: column;
+        gap: 0;
     }
     .menu-content-wrapper {
         padding: 0 16px;
@@ -139,4 +140,27 @@
         flex-direction: column-reverse;
     }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-img {
+        border-radius: 32px;
+    }
+    .hero-img img {
+        padding: 30px 30px;
+        border-radius: 32px;
+    }
+    .menu-category {
+        padding: 0;
+    }
+    .menu-category img {
+        margin: 0;
+    }
+    .menu-category-content {
+        justify-content: center;
+    }
+    .menu-content-wrapper {
+        padding: 30px;
+        align-items: center;
+    }
 }
