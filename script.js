@@ -150,6 +150,8 @@ function addToBasket(event) {
 
     }
     renderBasket()
+
+    console.log(basket)
 };
 
 function renderBasket() {
@@ -159,26 +161,28 @@ function renderBasket() {
     basket.forEach((order) => {
         const orderCard = document.createElement("div")
         const orderTitle = document.createElement("div")
-        const orderPrice = document.createElement("div")
-        const orderQuantity = document.createElement("div")
+        const orderInformation = document.createElement("div")
+
+        orderCard.classList.add("basket-menu-card")
+        orderTitle.classList.add("basket-menu-card-headline")
+        orderInformation.classList.add("basket-menu-card-information")
 
         orderTitle.innerHTML = `
-    <h3>${order.name}</h3>
+        <h3>${order.name}</h3>
     `;
 
-        orderQuantity.innerHTML = `
-    <h3>${order.quantity}</h3>
-    `;
-
-        orderPrice.innerHTML = `
-    <h3>${order.price}</h3>
+        orderInformation.innerHTML = `
+        <div class="basket-menu-card-quantity">
+            <button class="minus-item-button">-</button>
+            <h3>${order.quantity}</h3>
+            <button class="plus-item-button">+</button>
+        </div>
+         <h3>${order.price}</h3>
     `;
 
         document.getElementById("basket-items").appendChild(orderCard)
         orderCard.appendChild(orderTitle)
-        orderCard.appendChild(orderPrice)
-        orderCard.appendChild(orderQuantity)
+        orderCard.appendChild(orderInformation)
     });
 };
 
-console.log(basket)
