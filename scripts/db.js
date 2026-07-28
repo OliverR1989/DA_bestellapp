@@ -6,6 +6,7 @@ const deliverCost = (euroFormat.format(4.90));
 
 const menuData = [
   {
+    id: 0,
     category: "Maki",
     name: "Avocado Maki",
     description: "Klassische Reisrolle mit frischer Avocado",
@@ -13,6 +14,7 @@ const menuData = [
     image: "./assets/img/menu/avocado-maki.png",
   },
   {
+    id: 1,
     category: "Maki",
     name: "Lachs Maki",
     description: "Reisrolle mit frischem Lachs und Nori",
@@ -20,6 +22,7 @@ const menuData = [
     image: "./assets/img/menu/lachs-maki.png",
   },
   {
+    id: 2,
     category: "Maki",
     name: "Gurken Maki",
     description: "Vegetarische Rolle mit knackiger Gurke",
@@ -27,6 +30,7 @@ const menuData = [
     image: "./assets/img/menu/gurken-maki.png",
   },
   {
+    id: 3,
     category: "Nigiri",
     name: "Lachs Nigiri",
     description: "Handgeformter Reis mit frischer Lachsscheibe",
@@ -34,6 +38,7 @@ const menuData = [
     image: "./assets/img/menu/lachs-nigiri.png",
   },
   {
+    id: 4,
     category: "Nigiri",
     name: "Thunfisch Nigiri",
     description: "Handgeformter Reis mit magerem Thunfisch",
@@ -41,6 +46,7 @@ const menuData = [
     image: "./assets/img/menu/thunfisch-nigiri.png",
   },
   {
+    id: 5,
     category: "Nigiri",
     name: "Garnelen Nigiri",
     description: "Handgeformter Reis mit gekochter Garnele",
@@ -48,6 +54,7 @@ const menuData = [
     image: "./assets/img/menu/garnelen-nigiri.png",
   },
   {
+    id: 6,
     category: "Dessert",
     name: "Mochi Erdbeere",
     description: "Weiches Reiskuchen-Dessert mit Erdbeerfüllung",
@@ -55,6 +62,7 @@ const menuData = [
     image: "./assets/img/menu/mochi-dessert.png",
   },
   {
+    id: 7,
     category: "Dessert",
     name: "Mango Sticky Rice",
     description: "Klebreis mit süßer Kokosmilch und frischer Mango",
@@ -62,6 +70,7 @@ const menuData = [
     image: "./assets/img/menu/mango-dessert.png",
   },
   {
+    id: 8,
     category: "Dessert",
     name: "Green Tea Eis",
     description: "Cremiges Matcha-Eis, leicht und erfrischend",
@@ -69,6 +78,7 @@ const menuData = [
     image: "./assets/img/menu/ice-dessert.png",
   },
   {
+    id: 9,
     category: "Getraenke",
     name: "Grüner Tee",
     description: "Traditioneller japanischer Grüntee, warm serviert",
@@ -76,6 +86,7 @@ const menuData = [
     image: "./assets/img/menu/tea-drinks.png",
   },
   {
+    id: 10,
     category: "Getraenke",
     name: "Ramune",
     description: "Japanische Limonade mit fruchtigem Geschmack",
@@ -83,6 +94,7 @@ const menuData = [
     image: "./assets/img/menu/ramune-drinks.png",
   },
   {
+    id: 11,
     category: "Getraenke",
     name: "Mineralwasser",
     description: "Still oder mit Kohlensäure",
