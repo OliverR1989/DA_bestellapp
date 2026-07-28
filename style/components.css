@@ -160,7 +160,7 @@
 
 /* basket-sticky */
 .basket-sticky {
-    display: none;
+    display: flex;
 
     position: sticky;
     top: 0;
