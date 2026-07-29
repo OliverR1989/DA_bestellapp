@@ -183,27 +183,19 @@ function renderBasket() {
         document.getElementById("basket-items").appendChild(orderCard)
         orderCard.appendChild(orderTitle)
         orderCard.appendChild(orderInformation)
-    });
+    })
 };
 
-let plusButtons = document.getElementById("basket-items")
 document.getElementById("basket-items").addEventListener('click', function (event) {
     let searchID = Number(event.target.dataset.id);
     let basketItem = basket.find(item => item.id === searchID);
     if (event.target.classList.contains("plus-item-button")) {
 
         basketItem.quantity++;
-        renderBasket();
-    };
-});
 
-let minusButtons = document.getElementById("basket-items")
-document.getElementById("basket-items").addEventListener('click', function (event) {
-    let searchID = Number(event.target.dataset.id);
-    let basketItem = basket.find(item => item.id === searchID);
-    if (event.target.classList.contains("minus-item-button")) {
+    } else if (event.target.classList.contains("minus-item-button")) {
 
         basketItem.quantity--;
-        renderBasket();
-    };
-});
+    }
+    renderBasket()
+})
