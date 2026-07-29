@@ -184,7 +184,7 @@
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 
-    padding: 60px 65px 60px 30px;
+    padding: 60px 30px 60px 30px;
 }
 
 .basket-wrapper h6 {
@@ -222,11 +222,15 @@
 .basket-menu-card-information {
     display: flex;
     justify-content: space-between;
+
+
 }
 
 .basket-menu-card-quantity {
     display: flex;
     align-items: center;
+    justify-content: center;
+        gap:10px;
 }
 
 .delet-all-button {

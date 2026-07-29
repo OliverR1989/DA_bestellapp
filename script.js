@@ -173,9 +173,9 @@ function renderBasket() {
 
         orderInformation.innerHTML = `
         <div class="basket-menu-card-quantity">
-            <button class="minus-item-button">-</button>
+            <button class="minus-item-button" data-id="${order.id}"></button>
             <h3>${order.quantity}</h3>
-            <button class="plus-item-button">+</button>
+            <button class="plus-item-button" data-id="${order.id}"></button>
         </div>
          <h3>${order.price}</h3>
     `;
@@ -186,3 +186,24 @@ function renderBasket() {
     });
 };
 
+let plusButtons = document.getElementById("basket-items")
+document.getElementById("basket-items").addEventListener('click', function (event) {
+    let searchID = Number(event.target.dataset.id);
+    let basketItem = basket.find(item => item.id === searchID);
+    if (event.target.classList.contains("plus-item-button")) {
+
+        basketItem.quantity++;
+        renderBasket();
+    };
+});
+
+let minusButtons = document.getElementById("basket-items")
+document.getElementById("basket-items").addEventListener('click', function (event) {
+    let searchID = Number(event.target.dataset.id);
+    let basketItem = basket.find(item => item.id === searchID);
+    if (event.target.classList.contains("minus-item-button")) {
+
+        basketItem.quantity--;
+        renderBasket();
+    };
+});
