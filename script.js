@@ -1,6 +1,3 @@
-menuData.forEach((menuPrice) => {
-    menuPrice.price = (euroFormat.format(menuPrice.price))
-})
 
 document.getElementById("deliver-cost").innerText = deliverCost;
 
@@ -26,7 +23,7 @@ menuData.forEach((menu) => {
         `;
 
         menuCardPrice.innerHTML = `
-        <h4>${menu.price}</h4>
+        <h4>${euroFormat.format(menu.price)}</h4>
         <button class="add-basket-button" data-id="${menu.id}"></button>`
 
         document.getElementById("main-content-maki").appendChild(menuCard)
@@ -58,7 +55,7 @@ menuData.forEach((menu) => {
         `;
 
         menuCardPrice.innerHTML = `
-        <h3>${menu.price}</h3>
+        <h4>${euroFormat.format(menu.price)}</h4>
         <button class="add-basket-button" data-id="${menu.id}"></button>`
 
         document.getElementById("main-content-nigiri").appendChild(menuCard)
@@ -89,7 +86,7 @@ menuData.forEach((menu) => {
         `;
 
         menuCardPrice.innerHTML = `
-        <h3>${menu.price}</h3>
+        <h4>${euroFormat.format(menu.price)}</h4>
         <button class="add-basket-button" data-id="${menu.id}"></button>`
 
         document.getElementById("main-content-dessert").appendChild(menuCard)
@@ -121,7 +118,7 @@ menuData.forEach((menu) => {
         `;
 
         menuCardPrice.innerHTML = `
-        <h3>${menu.price}</h3>
+        <h4>${euroFormat.format(menu.price)}</h4>
         <button class="add-basket-button" data-id="${menu.id}"></button>`
 
         document.getElementById("main-content-getraenke").appendChild(menuCard)
@@ -149,9 +146,9 @@ function addToBasket(event) {
         basket.push({ id: findMenu.id, name: findMenu.name, price: findMenu.price, quantity: 1, });
 
     }
-    renderBasket()
 
-    console.log(basket)
+
+    calculateSubtotal()
 };
 
 function renderBasket() {
@@ -177,7 +174,7 @@ function renderBasket() {
             <h3>${order.quantity}</h3>
             <button class="plus-item-button" data-id="${order.id}"></button>
         </div>
-         <h3>${order.price}</h3>
+         <h3>${euroFormat.format(order.price * order.quantity)}</h3>
     `;
 
         document.getElementById("basket-items").appendChild(orderCard)
@@ -197,5 +194,19 @@ document.getElementById("basket-items").addEventListener('click', function (even
 
         basketItem.quantity--;
     }
-    renderBasket()
+    calculateSubtotal()
+
 })
+
+function calculateSubtotal() {
+    const basketSubtotal = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.price * aktuellesElement.quantity, 0)
+    document.getElementById("subtotal-cost").innerHTML = euroFormat.format(basketSubtotal);
+
+    renderBasket()
+
+    console.log(basketSubtotal)
+
+}
+
+
+
