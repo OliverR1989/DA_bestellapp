@@ -2,7 +2,9 @@ const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 
 
 const basket = [];
 
-const deliverCost = (euroFormat.format(4.90));
+const deliverCost = 4.90;
+
+let subtotal = 0;
 
 const menuData = [
   {

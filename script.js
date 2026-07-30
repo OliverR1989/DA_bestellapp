@@ -1,5 +1,5 @@
 
-document.getElementById("deliver-cost").innerText = deliverCost;
+document.getElementById("deliver-cost").innerText = euroFormat.format(deliverCost);
 
 menuData.forEach((menu) => {
     if (menu.category === "Maki") {
@@ -147,8 +147,8 @@ function addToBasket(event) {
 
     }
 
-
     calculateSubtotal()
+    calculateTotal()
 };
 
 function renderBasket() {
@@ -195,6 +195,7 @@ document.getElementById("basket-items").addEventListener('click', function (even
         basketItem.quantity--;
     }
     calculateSubtotal()
+    calculateTotal()
 
 })
 
@@ -204,7 +205,14 @@ function calculateSubtotal() {
 
     renderBasket()
 
-    console.log(basketSubtotal)
+    subtotal = basketSubtotal
+
+}
+
+function calculateTotal() {
+    const basketTotal =  subtotal + deliverCost
+    
+    document.getElementById("total-cost").innerHTML = euroFormat.format(basketTotal)
 
 }
 
