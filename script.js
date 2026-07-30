@@ -193,7 +193,14 @@ document.getElementById("basket-items").addEventListener('click', function (even
     } else if (event.target.classList.contains("minus-item-button")) {
 
         basketItem.quantity--;
+
     }
+
+    if (basketItem.quantity === 0) {
+
+       basket = basket.filter(item => item.id !== searchID)
+    }
+
     calculateSubtotal()
     calculateTotal()
 
@@ -210,8 +217,8 @@ function calculateSubtotal() {
 }
 
 function calculateTotal() {
-    const basketTotal =  subtotal + deliverCost
-    
+    const basketTotal = subtotal + deliverCost
+
     document.getElementById("total-cost").innerHTML = euroFormat.format(basketTotal)
 
 }

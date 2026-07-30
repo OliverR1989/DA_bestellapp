@@ -1,6 +1,6 @@
 const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
 
-const basket = [];
+let basket = [];
 
 const deliverCost = 4.90;
 
