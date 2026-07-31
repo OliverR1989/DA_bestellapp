@@ -226,8 +226,11 @@
         gap:10px;
 }
 
-.delet-all-button {
+.delet-menu-card-button-hidden {
     display: none;
+}
+.delet-menu-card-button {
+    display: flex;
 
     width: 24px;
     height: 24px;

@@ -149,10 +149,16 @@ document.getElementById("basket-items").addEventListener('click', function (even
         basket = basket.filter(item => item.id !== searchID)
     }
 
+    if (event.target.classList.contains("delet-menu-card-button-hidden")) {
+
+        basket = basket.filter(item => item.id !== searchID)
+    }
+
     calculateSubtotal()
     calculateTotal()
 
 })
+
 
 function addToBasket(event) {
     let searchID = Number(event.target.dataset.id);
@@ -191,7 +197,8 @@ function renderBasket() {
         orderInformation.classList.add("basket-menu-card-information")
 
         orderTitle.innerHTML = `
-        <h3>${order.name}</h3>
+            <h3>${order.name}</h3>
+            <button class="delet-menu-card-button-hidden" id="delet-menu-button" data-id="${order.id}"></button>
     `;
 
         orderInformation.innerHTML = `
@@ -208,15 +215,13 @@ function renderBasket() {
         orderCard.appendChild(orderTitle)
         orderCard.appendChild(orderInformation)
 
-        if (order.quantity > 1) {
-            document.getElementById("delet-item-button").classList.add("trash-item-button-hidden")
-            document.getElementById("minus-item-button").classList.add("minus-item-button")
-        }
-    })
-
-
-
-};
+            if (order.quantity > 1) {
+                orderInformation.querySelector(".trash-item-button").classList.add("trash-item-button-hidden")
+                orderInformation.querySelector(".minus-item-button-hidden").classList.add("minus-item-button")
+                orderTitle.querySelector(".delet-menu-card-button-hidden").classList.add("delet-menu-card-button")
+            }
+        })
+}
 
 function calculateSubtotal() {
     const basketSubtotal = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.price * aktuellesElement.quantity, 0)
