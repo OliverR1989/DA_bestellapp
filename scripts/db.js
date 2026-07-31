@@ -1,10 +1,12 @@
-const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
-
 let basket = [];
 
-const deliverCost = 4.90;
-
 let subtotal = 0;
+
+let total = 0;
+
+const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
+
+const deliverCost = 4.90;
 
 const menuData = [
   {

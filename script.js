@@ -1,6 +1,3 @@
-
-document.getElementById("deliver-cost").innerText = euroFormat.format(deliverCost);
-
 menuData.forEach((menu) => {
     if (menu.category === "Maki") {
         const menuCard = document.createElement("div")
@@ -131,6 +128,31 @@ menuData.forEach((menu) => {
 let buttons = document.querySelectorAll('.add-basket-button');
 buttons.forEach(button => button.addEventListener('click', addToBasket));
 
+document.getElementById("deliver-cost").innerText = euroFormat.format(deliverCost);
+
+document.getElementById("basket-items").addEventListener('click', function (event) {
+    let searchID = Number(event.target.dataset.id);
+    let basketItem = basket.find(item => item.id === searchID);
+    if (event.target.classList.contains("plus-item-button")) {
+
+        basketItem.quantity++;
+
+    } else if (event.target.classList.contains("minus-item-button")) {
+
+        basketItem.quantity--;
+
+    }
+
+    if (basketItem.quantity === 0) {
+
+       basket = basket.filter(item => item.id !== searchID)
+    }
+
+    calculateSubtotal()
+    calculateTotal()
+
+})
+
 function addToBasket(event) {
     let searchID = Number(event.target.dataset.id);
     let findMenu = menuData.find(menu => menu.id === searchID);
@@ -183,29 +205,6 @@ function renderBasket() {
     })
 };
 
-document.getElementById("basket-items").addEventListener('click', function (event) {
-    let searchID = Number(event.target.dataset.id);
-    let basketItem = basket.find(item => item.id === searchID);
-    if (event.target.classList.contains("plus-item-button")) {
-
-        basketItem.quantity++;
-
-    } else if (event.target.classList.contains("minus-item-button")) {
-
-        basketItem.quantity--;
-
-    }
-
-    if (basketItem.quantity === 0) {
-
-       basket = basket.filter(item => item.id !== searchID)
-    }
-
-    calculateSubtotal()
-    calculateTotal()
-
-})
-
 function calculateSubtotal() {
     const basketSubtotal = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.price * aktuellesElement.quantity, 0)
     document.getElementById("subtotal-cost").innerHTML = euroFormat.format(basketSubtotal);
@@ -214,6 +213,8 @@ function calculateSubtotal() {
 
     subtotal = basketSubtotal
 
+    console.log(euroFormat.format(subtotal))
+
 }
 
 function calculateTotal() {
@@ -221,6 +222,9 @@ function calculateTotal() {
 
     document.getElementById("total-cost").innerHTML = euroFormat.format(basketTotal)
 
+    total = basketTotal
+
+      console.log(euroFormat.format(total))
 }
 
 
