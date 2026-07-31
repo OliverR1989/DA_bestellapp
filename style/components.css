@@ -253,8 +253,10 @@
     cursor: pointer;
 }
 
-.delet-item-button {
+.trash-item-button-hidden {
     display: none;
+}
+.trash-item-button {
     width: 24px;
     height: 24px;
 
@@ -269,8 +271,13 @@
     cursor: pointer;
 }
 
+.minus-item-button-hidden {
+    display: none;
+}
+
 .minus-item-button {
-    width: 13px;
+    display: flex;
+    width: 24px;
     height: 24px;
 
     background-image: url(/assets/icons/minus.png);
@@ -285,7 +292,7 @@
 }
 
 .plus-item-button {
-    width: 13px;
+    width: 24px;
     height: 24px;
 
     background-image: url(/assets/icons/plus.png);

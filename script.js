@@ -137,15 +137,16 @@ document.getElementById("basket-items").addEventListener('click', function (even
 
         basketItem.quantity++;
 
-    } else if (event.target.classList.contains("minus-item-button")) {
+    } else if (event.target.classList.contains("trash-item-button") || event.target.classList.contains("minus-item-button")) {
 
         basketItem.quantity--;
 
     }
 
+
     if (basketItem.quantity === 0) {
 
-       basket = basket.filter(item => item.id !== searchID)
+        basket = basket.filter(item => item.id !== searchID)
     }
 
     calculateSubtotal()
@@ -170,7 +171,7 @@ function addToBasket(event) {
         document.getElementById("basket-empty").classList.remove("basket-sticky-empty")
 
     }
-    
+
 
     calculateSubtotal()
     calculateTotal()
@@ -195,9 +196,10 @@ function renderBasket() {
 
         orderInformation.innerHTML = `
         <div class="basket-menu-card-quantity">
-            <button class="minus-item-button" data-id="${order.id}"></button>
+            <button class="trash-item-button" id="delet-item-button" data-id="${order.id}"></button>
+            <button class="minus-item-button-hidden" id="minus-item-button" data-id="${order.id}"></button>
             <h3>${order.quantity}</h3>
-            <button class="plus-item-button" data-id="${order.id}"></button>
+            <button class="plus-item-button" id="plus-item-button" data-id="${order.id}"></button>
         </div>
          <h3>${euroFormat.format(order.price * order.quantity)}</h3>
     `;
@@ -205,7 +207,14 @@ function renderBasket() {
         document.getElementById("basket-items").appendChild(orderCard)
         orderCard.appendChild(orderTitle)
         orderCard.appendChild(orderInformation)
+
+        if (order.quantity > 1) {
+            document.getElementById("delet-item-button").classList.add("trash-item-button-hidden")
+            document.getElementById("minus-item-button").classList.add("minus-item-button")
+        }
     })
+
+
 
 };
 
