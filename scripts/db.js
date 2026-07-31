@@ -4,6 +4,8 @@ let subtotal = 0;
 
 let total = 0;
 
+let basketQuantity = basket.length;
+
 const euroFormat = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
 
 const deliverCost = 4.90;

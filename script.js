@@ -166,8 +166,11 @@ function addToBasket(event) {
     else {
 
         basket.push({ id: findMenu.id, name: findMenu.name, price: findMenu.price, quantity: 1, });
+        document.getElementById("basket").classList.add("basket-sticky")
+        document.getElementById("basket-empty").classList.remove("basket-sticky-empty")
 
     }
+    
 
     calculateSubtotal()
     calculateTotal()
@@ -203,6 +206,7 @@ function renderBasket() {
         orderCard.appendChild(orderTitle)
         orderCard.appendChild(orderInformation)
     })
+
 };
 
 function calculateSubtotal() {
@@ -213,7 +217,10 @@ function calculateSubtotal() {
 
     subtotal = basketSubtotal
 
-    console.log(euroFormat.format(subtotal))
+    if (basketSubtotal === 0) {
+        document.getElementById("basket").classList.remove("basket-sticky")
+        document.getElementById("basket-empty").classList.add("basket-sticky-empty")
+    }
 
 }
 
@@ -224,7 +231,7 @@ function calculateTotal() {
 
     total = basketTotal
 
-      console.log(euroFormat.format(total))
+    console.log(euroFormat.format(total))
 }
 
 

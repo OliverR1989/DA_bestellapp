@@ -159,6 +159,9 @@
 }
 
 /* basket-sticky */
+.basket-hidden {
+    display: none;
+}
 .basket-sticky {
     display: flex;
 
@@ -346,8 +349,12 @@
 }
 
 /* Empty Basket */
-.basket-sticky-empty {
+.basket-sticky-empty-hidden {
     display: none;
+}
+
+.basket-sticky-empty {
+    display: flex;
 
     position: sticky;
     top: 0;
