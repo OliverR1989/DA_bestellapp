@@ -168,6 +168,7 @@ function addToBasket(event) {
     if (basketItem) {
 
         basketItem.quantity++;
+        document.getElementById("basket").classList.add("basket-sticky")
 
     }
     else {
