@@ -242,11 +242,43 @@ function calculateTotal() {
     const basketTotal = subtotal + deliverCost
 
     document.getElementById("total-cost").innerHTML = euroFormat.format(basketTotal)
+    document.getElementById("total-cost-button").innerHTML = "( " + euroFormat.format(basketTotal) + " )"
 
     total = basketTotal
 
     console.log(euroFormat.format(total))
 }
+
+function openModal() {
+    document.getElementById("basket").classList.add('basket-hidden');
+    document.getElementById("modal").classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+}
+
+function closeModal() {
+    document.getElementById("modal").classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.delivery-modal').forEach(function(modal) {
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    })
+})
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.delivery-modal.active');
+        if (activeModal) {
+            activeModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+})
 
 
 

@@ -50,6 +50,7 @@
 
     padding-left: 120px;
 }
+
 .menu-card {
     background-color: rgba(253, 234, 220, 1);
 
@@ -148,10 +149,82 @@
     border: none;
 }
 
+.sticky-home {
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/icons/home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.sticky-profil {
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/icons/profile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.sticky-orders {
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/icons/orders.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.sticky-basket {
+    background-image: url(/assets/icons/basket-default.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+}
+
+.sticky-home:active {
+    background-image: url(/assets/icons/sticky-home-press.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+     border-radius: 5px;
+}
+
+.sticky-profil:active {
+    background-image: url(/assets/icons/sticky-profil-press.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+     border-radius: 5px;
+}
+
+.sticky-orders:active {
+    background-image: url(/assets/icons/sticky-orders-press.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+     border-radius: 5px;
+}
+
+.sticky-basket:active {
+    background-image: url(/assets/icons/sticky-basket-press.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+     border-radius: 5px;
+}
+
 /* basket-sticky */
 .basket-hidden {
     display: none;
 }
+
 .basket-sticky {
     display: flex;
 
@@ -223,12 +296,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-        gap:10px;
+    gap: 10px;
 }
 
 .delet-menu-card-button-hidden {
     display: none;
 }
+
 .delet-menu-card-button {
     display: flex;
 
@@ -246,14 +320,49 @@
     cursor: pointer;
 }
 
+.delet-menu-card-button:hover {
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/delet-hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+
 .trash-item-button-hidden {
     display: none;
 }
+
 .trash-item-button {
     width: 24px;
     height: 24px;
 
     background-image: url(/assets/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.trash-item-button:hover {
+    display: flex;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/delete-hover.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
