@@ -250,12 +250,17 @@ function calculateTotal() {
     console.log(euroFormat.format(total))
 }
 
-function openBasket() {
+function openAndCloseBasket() {
+    const basket = document.getElementById("basket")
+    const emptyBasket = document.getElementById("basket-empty")
+    if (subtotal === 0) {
 
-}
+        emptyBasket.classList.toggle("basket-sticky-empty")
 
-function closeBasket() {
-    
+    } else {
+        
+        basket.classList.toggle("basket-sticky")
+    }
 }
 
 function openModal() {
