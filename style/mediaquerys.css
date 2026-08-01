@@ -11,6 +11,14 @@
         font-size: 22px;
     }
 
+    h6 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
     nav {
         padding: 0 16px;
         justify-content: start;
@@ -66,6 +74,11 @@
 
     .main {
         align-items: center;
+    }
+
+    .main-wrapper {
+        width: 100%;
+        flex-direction: column;
     }
 
     .menu-wrapper {
@@ -134,6 +147,39 @@
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .basket-hidden {
+        width: 100%;
+    }
+    .basket-wrapper {
+        width: 100%;
+        padding: 40px 20px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+    }
+    .basket-wrapper h6 {
+        padding-bottom: 16px;
+    }
+    .basket-menu-card {
+        width: 100%;
+    }
+
+    .basket-total p {
+        font-size: 22px;
+    }
+
+    .buy-now-button p{
+        font-size: 24px;
+    }
+
+    .basket-sticky-empty-hidden {
+        width: 100%;
+    }
+    .basket-wrapper-empty {
+        padding: 40px 20px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
     }
 
     .footer-wrapper {

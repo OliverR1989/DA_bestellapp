@@ -250,6 +250,14 @@ function calculateTotal() {
     console.log(euroFormat.format(total))
 }
 
+function openBasket() {
+
+}
+
+function closeBasket() {
+    
+}
+
 function openModal() {
     document.getElementById("basket").classList.remove('basket-sticky');
     document.getElementById("modal").classList.add('active');
