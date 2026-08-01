@@ -234,10 +234,6 @@
     z-index: 999;
 }
 
-.basket-sticky.openBasket {
-    display: flex;
-}
-
 .basket-wrapper {
     width: 440px;
     height: 800px;

@@ -215,12 +215,12 @@ function renderBasket() {
         orderCard.appendChild(orderTitle)
         orderCard.appendChild(orderInformation)
 
-            if (order.quantity > 1) {
-                orderInformation.querySelector(".trash-item-button").classList.add("trash-item-button-hidden")
-                orderInformation.querySelector(".minus-item-button-hidden").classList.add("minus-item-button")
-                orderTitle.querySelector(".delet-menu-card-button-hidden").classList.add("delet-menu-card-button")
-            }
-        })
+        if (order.quantity > 1) {
+            orderInformation.querySelector(".trash-item-button").classList.add("trash-item-button-hidden")
+            orderInformation.querySelector(".minus-item-button-hidden").classList.add("minus-item-button")
+            orderTitle.querySelector(".delet-menu-card-button-hidden").classList.add("delet-menu-card-button")
+        }
+    })
 }
 
 function calculateSubtotal() {
@@ -250,10 +250,12 @@ function calculateTotal() {
 }
 
 function openModal() {
-    document.getElementById("basket").classList.add('basket-hidden');
+    document.getElementById("basket").classList.remove('basket-sticky');
     document.getElementById("modal").classList.add('active');
     document.body.style.overflow = 'hidden';
-    
+
+    setTimeout(closeModal, 2500)
+
 }
 
 function closeModal() {
@@ -261,7 +263,7 @@ function closeModal() {
     document.body.style.overflow = '';
 }
 
-document.querySelectorAll('.delivery-modal').forEach(function(modal) {
+document.querySelectorAll('.delivery-modal').forEach(function (modal) {
     modal.addEventListener('click', function (e) {
         if (e.target === modal) {
             modal.classList.remove('active');
@@ -270,7 +272,7 @@ document.querySelectorAll('.delivery-modal').forEach(function(modal) {
     })
 })
 
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         const activeModal = document.querySelector('.delivery-modal.active');
         if (activeModal) {
@@ -279,6 +281,3 @@ document.addEventListener('keydown', function(e) {
         }
     }
 })
-
-
-
