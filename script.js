@@ -237,6 +237,9 @@ function calculateSubtotal() {
     if (basketSubtotal === 0) {
         document.getElementById("basket").classList.remove("basket-sticky")
         document.getElementById("basket-empty").classList.add("basket-sticky-empty")
+        document.getElementById("itemCounter").classList.remove("items-counter")
+    } else {
+        document.getElementById("itemCounter").classList.add("items-counter")
     }
 
 }
