@@ -1,0 +1,222 @@
+.add-basket-button {
+    background-image: url(/assets/icons/basket-default.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 115px;
+    height: 35px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.add-basket-button:hover {
+    background-image: url(/assets/icons/basket-hover.png);
+}
+
+.add-basket-button-active {
+    background-image: url(/assets/icons/basket-added.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 115px;
+    height: 35px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.sticky-footer-basket-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: start;
+    justify-content: end;
+
+    background-image: url("../assets/icons/sticky-basket.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sticky-footer-basket-icon:active {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: start;
+    justify-content: end;
+
+    background-image: url("../assets/icons/sticky-basket-press.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sticky-footer-basket-icon-quantity {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: start;
+    justify-content: end;
+
+    background-image: url("../assets/icons/basket-quantity.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sticky-footer-basket-button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+
+    margin-top: -5px;
+    margin-right: -10px;
+}
+
+.items-counter-hidden {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(231, 108, 31, 1);
+}
+
+.delet-menu-card-button-hidden {
+    display: none;
+}
+
+.delet-menu-card-button {
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.delet-menu-card-button:hover {
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/delet-hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+.trash-item-button-hidden {
+    display: none;
+}
+
+.trash-item-button {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.trash-item-button:hover {
+    display: flex;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/delete-hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.minus-item-button-hidden {
+    display: none;
+}
+
+.minus-item-button {
+    display: flex;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/minus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.plus-item-button {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(/assets/icons/plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.buy-now-button {
+    width: 100%;
+    height: 64px;
+
+    background-color: rgba(231, 108, 31, 1);
+    border-radius: 60px;
+    border: none;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buy-now-button p {
+    color: rgba(251, 251, 251, 1);
+    font-family: 'Palanquin';
+    font-size: 32px;
+    font-weight: 700;
+}

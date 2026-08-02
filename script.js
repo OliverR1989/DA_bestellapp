@@ -140,9 +140,7 @@ document.getElementById("basket-items").addEventListener('click', function (even
     } else if (event.target.classList.contains("trash-item-button") || event.target.classList.contains("minus-item-button")) {
 
         basketItem.quantity--;
-
     }
-
 
     if (basketItem.quantity === 0) {
 
@@ -176,7 +174,6 @@ function addToBasket(event) {
         basket.push({ id: findMenu.id, name: findMenu.name, price: findMenu.price, quantity: 1, });
         document.getElementById("basket").classList.add("basket-sticky")
         document.getElementById("basket-empty").classList.remove("basket-sticky-empty")
-
     }
 
 
@@ -238,7 +235,7 @@ function calculateSubtotal() {
         document.getElementById("basket").classList.remove("basket-sticky")
         document.getElementById("basket-empty").classList.add("basket-sticky-empty")
         document.getElementById("itemCounter").classList.remove("items-counter")
-         document.getElementById("itemCounterContent").classList.remove("sticky-footer-basket-icon-quantity")
+        document.getElementById("itemCounterContent").classList.remove("sticky-footer-basket-icon-quantity")
     } else {
         document.getElementById("itemCounter").classList.add("items-counter")
         document.getElementById("itemCounterContent").classList.add("sticky-footer-basket-icon-quantity")
@@ -253,8 +250,6 @@ function calculateTotal() {
     document.getElementById("total-cost-button").innerHTML = "( " + euroFormat.format(basketTotal) + " )"
 
     total = basketTotal
-
-    console.log(euroFormat.format(total))
 }
 
 function openAndCloseBasket() {
