@@ -190,7 +190,7 @@
     background-position: center;
     background-size: contain;
     background-color: white;
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 .sticky-profil:active {
@@ -199,7 +199,7 @@
     background-position: center;
     background-size: contain;
     background-color: white;
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 .sticky-orders:active {
@@ -208,7 +208,7 @@
     background-position: center;
     background-size: contain;
     background-color: white;
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 .sticky-basket:active {
@@ -217,7 +217,18 @@
     background-position: center;
     background-size: contain;
     background-color: white;
-     border-radius: 5px;
+    border-radius: 5px;
+}
+
+.items-counter {
+    width: 15px;
+    height: 15px;
+
+    background-color: rgba(253, 234, 220, 1);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* basket-sticky */

@@ -226,7 +226,9 @@ function renderBasket() {
 
 function calculateSubtotal() {
     const basketSubtotal = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.price * aktuellesElement.quantity, 0)
+    const itemAmount = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.quantity, 0) 
     document.getElementById("subtotal-cost").innerHTML = euroFormat.format(basketSubtotal);
+    document.getElementById("itemCounter").innerHTML = itemAmount
 
     renderBasket()
 
@@ -258,7 +260,7 @@ function openAndCloseBasket() {
         emptyBasket.classList.toggle("basket-sticky-empty")
 
     } else {
-        
+
         basket.classList.toggle("basket-sticky")
     }
 }
