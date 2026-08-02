@@ -142,6 +142,19 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+.sticky-footer-basket-icon-quantity {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: start;
+    justify-content: end;
+
+    background-image: url("../assets/icons/basket-quantity.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 .sticky-footer-basket-button {
     outline: none;

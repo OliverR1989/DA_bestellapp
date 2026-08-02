@@ -226,7 +226,7 @@ function renderBasket() {
 
 function calculateSubtotal() {
     const basketSubtotal = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.price * aktuellesElement.quantity, 0)
-    const itemAmount = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.quantity, 0) 
+    const itemAmount = basket.reduce((akkumulator, aktuellesElement) => akkumulator + aktuellesElement.quantity, 0)
     document.getElementById("subtotal-cost").innerHTML = euroFormat.format(basketSubtotal);
     document.getElementById("itemCounter").innerHTML = itemAmount
 
@@ -238,8 +238,10 @@ function calculateSubtotal() {
         document.getElementById("basket").classList.remove("basket-sticky")
         document.getElementById("basket-empty").classList.add("basket-sticky-empty")
         document.getElementById("itemCounter").classList.remove("items-counter")
+         document.getElementById("itemCounterContent").classList.remove("sticky-footer-basket-icon-quantity")
     } else {
         document.getElementById("itemCounter").classList.add("items-counter")
+        document.getElementById("itemCounterContent").classList.add("sticky-footer-basket-icon-quantity")
     }
 
 }
@@ -261,10 +263,12 @@ function openAndCloseBasket() {
     if (subtotal === 0) {
 
         emptyBasket.classList.toggle("basket-sticky-empty")
+        
 
     } else {
 
         basket.classList.toggle("basket-sticky")
+        
     }
 }
 
