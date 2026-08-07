@@ -220,3 +220,16 @@
     font-size: 32px;
     font-weight: 700;
 }
+.close-modal {
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}

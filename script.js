@@ -272,7 +272,9 @@ function openModal() {
     document.getElementById("modal").classList.add('active');
     document.body.style.overflow = 'hidden';
 
-    setTimeout(closeModal, 2500)
+    basket.length = 0;
+
+    //setTimeout(closeModal, 2500)
 
 }
 
